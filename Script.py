@@ -410,7 +410,7 @@ sᴇʀɪᴇs ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ:
 
 ᴅᴏɴ'ᴛ ᴜsᴇ ' : ( ! , . / ) 
 
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ : - @imoviesrobot"""
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ : - @cinemica"""
 
 SRLT = """Search Query"""
 
