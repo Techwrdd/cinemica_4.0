@@ -56,7 +56,7 @@ Time : {datetime.now(tz=ist_timezone).strftime('%Y-%m-%d %H:%M:%S')}
         dmm = await m.reply_photo(
         photo=(MALIK5), 
         caption=(txt.format(message.from_user.mention)), 
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("➡️ JOIN THIS CHANNEL ⬅️",url="http://t.me/IMoviesRobot_channel"),]]),parse_mode=enums.ParseMode.HTML)#"You are now verified for next 24 hours. Continue asking movies")
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("➡️ JOIN THIS CHANNEL ⬅️",url="http://t.me/cinemica"),]]),parse_mode=enums.ParseMode.HTML)#"You are now verified for next 24 hours. Continue asking movies")
         return
         
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -66,15 +66,15 @@ Time : {datetime.now(tz=ist_timezone).strftime('%Y-%m-%d %H:%M:%S')}
                     InlineKeyboardButton('CHANNEL', url=CHNL_LNK),
                     InlineKeyboardButton('GROUP', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('REQUEST', url='https://t.me/RequestiMoviesBot'),
+                    InlineKeyboardButton('REQUEST', url='https://t.me/cinemica_bot'),
                     InlineKeyboardButton('SEARCH INLINE', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('⚠️ JOIN OUR BACKUP CHANNEL ⚠️', url='https://t.me/IMoviesRobot_backup'),
+                    InlineKeyboardButton('⚠️ JOIN OUR BACKUP CHANNEL ⚠️', url='https://t.me/cinemica_backup'),
                 ],[
-                    InlineKeyboardButton('WATCH ANY ANIME 💮', url='https://t.me/IANIMEHUB'),
-                    InlineKeyboardButton('MORE 🤖', url='https://t.me/BESTBOTSTG')
+                    InlineKeyboardButton('ANIME 💮', url='https://t.me/Naruto_complete_English'),
+                    InlineKeyboardButton('MARVEL 🤖', url='https://t.me/marvel_movies_hindi_download')
                   ],[
-                    InlineKeyboardButton('HOW TO USE THIS BOT ⚙️', url='https://t.me/iMoviesRobot_channel/114')
+                    InlineKeyboardButton('HOW TO USE THIS BOT ⚙️', url='https://t.me/cinemica/100')
                   ]]
 	    
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
@@ -94,15 +94,15 @@ Time : {datetime.now(tz=ist_timezone).strftime('%Y-%m-%d %H:%M:%S')}
                     InlineKeyboardButton('CHANNEL', url=CHNL_LNK),
                     InlineKeyboardButton('GROUP', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('REQUEST', url='https://t.me/RequestiMoviesBot'),
+                    InlineKeyboardButton('REQUEST', url='https://t.me/cinemica_bot'),
                     InlineKeyboardButton('SEARCH INLINE', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('⚠️ JOIN OUR BACKUP CHANNEL ⚠️', url='https://t.me/IMoviesRobot_backup'),
+                    InlineKeyboardButton('⚠️ JOIN OUR BACKUP CHANNEL ⚠️', url='https://t.me/cinemica_backup'),
                 ],[
-                    InlineKeyboardButton('WATCH ANY ANIME 💮', url='https://t.me/IANIMEHUB'),
-                    InlineKeyboardButton('MORE 🤖', url='https://t.me/BESTBOTSTG')
+                    InlineKeyboardButton('ANIME 💮', url='https://t.me/Naruto_complete_English'),
+                    InlineKeyboardButton('MARVEL 🤖', url='https://t.me/marvel_movies_hindi_download')
                   ],[
-                    InlineKeyboardButton('HOW TO USE THIS BOT ⚙️', url='https://t.me/iMoviesRobot_channel/114')
+                    InlineKeyboardButton('HOW TO USE THIS BOT ⚙️', url='https://t.me/cinemica/100')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -147,15 +147,15 @@ Time : {datetime.now(tz=ist_timezone).strftime('%Y-%m-%d %H:%M:%S')}
                     InlineKeyboardButton('CHANNEL', url=CHNL_LNK),
                     InlineKeyboardButton('GROUP', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('REQUEST', url='https://t.me/RequestiMoviesBot'),
+                    InlineKeyboardButton('REQUEST', url='https://t.me/cinemica_bot'),
                     InlineKeyboardButton('SEARCH INLINE', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('⚠️ JOIN OUR BACKUP CHANNEL ⚠️', url='https://t.me/IMoviesRobot_backup'),
+                    InlineKeyboardButton('⚠️ JOIN OUR BACKUP CHANNEL ⚠️', url='https://t.me/cinemica_backup'),
                 ],[
-                    InlineKeyboardButton('WATCH ANY ANIME 💮', url='https://t.me/IANIMEHUB'),
-                    InlineKeyboardButton('MORE 🤖', url='https://t.me/BESTBOTSTG')
+                    InlineKeyboardButton('ANIME 💮', url='https://t.me/Naruto_complete_English'),
+                    InlineKeyboardButton('MARVEL 🤖', url='https://t.me/marvel_movies_hindi_download')
                   ],[
-                    InlineKeyboardButton('HOW TO USE THIS BOT ⚙️', url='https://t.me/iMoviesRobot_channel/114')
+                    InlineKeyboardButton('HOW TO USE THIS BOT ⚙️', url='https://t.me/cinemica/100')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -388,12 +388,7 @@ Time : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
             [
                 [
                     InlineKeyboardButton(
-	                "𝙎𝙀𝙀 𝙈𝙊𝙍𝙀 𝙇𝙄𝙆𝙀 𝙏𝙃𝙀𝙎𝙀 🎬", url="https://t.me/iRecommendations"
-		    )
-	        ],
-	        [
-                    InlineKeyboardButton(
-	                "𝙒𝘼𝙏𝘾𝙃 𝘼𝙉𝙄𝙈𝙀 💮", url="https://t.me/iAnimeHub"
+	                "𝙎𝙀𝙀 𝙈𝙊𝙍𝙀 𝙇𝙄𝙆𝙀 𝙏𝙃𝙀𝙎𝙀 🎬", url="https://t.me/cinemica"
 		    )
 	        ],
 	        [			
