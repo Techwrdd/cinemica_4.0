@@ -62,18 +62,18 @@ WELCOM_TEXT = environ.get("WELCOM_TEXT", "Hi {user}\n Welcome to {chat}")
 G_FILTER = bool(environ.get("G_FILTER", True))
 BUTTON_LOCK = bool(environ.get("BUTTON_LOCK", False))
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/imoviesrobot_group')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/iMoviesRobot_channel')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+Spzsxjag4AEwN2U1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/cinemica')
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'iMoviesRobot_channel')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Cinemica_supportbot')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b><code>{file_name}</code>\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓ ✰<b>𝐉𝐨𝐢𝐧 [ 𝙈𝙤𝙫𝙞𝙚𝙨 𝙂𝙧𝙤𝙪𝙥 ](https://t.me/imoviesrobot_group)</b> 👑✰ ┗━━━━•❅•°•❈•°•❅•━━━━┛\n\n⚠️ 𝐍𝐨𝐭𝐞: This message will be Auto-deleted after 5 minutes to avoid copyright issues.\n\n𝙁𝙤𝙧𝙬𝙖𝙧𝙙 𝙩𝙤 𝙨𝙤𝙢𝙚 𝙤𝙩𝙝𝙚𝙧 𝙘𝙝𝙖𝙩 𝙤𝙧 𝙎𝙖𝙫𝙚𝙙 𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b><code>{file_name}</code>\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓ ✰<b>𝐉𝐨𝐢𝐧 [ 𝙈𝙤𝙫𝙞𝙚𝙨 𝙂𝙧𝙤𝙪𝙥 ](https://t.me/+Spzsxjag4AEwN2U1)</b> 👑✰ ┗━━━━•❅•°•❈•°•❅•━━━━┛\n\n⚠️ 𝐍𝐨𝐭𝐞: This message will be Auto-deleted after 5 minutes to avoid copyright issues.\n\n𝙁𝙤𝙧𝙬𝙖𝙧𝙙 𝙩𝙤 𝙨𝙤𝙢𝙚 𝙤𝙩𝙝𝙚𝙧 𝙘𝙝𝙖𝙩 𝙤𝙧 𝙎𝙖𝙫𝙚𝙙 𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
@@ -153,7 +153,7 @@ sᴇʀɪᴇs ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ:
 
 ᴅᴏɴ'ᴛ ᴜsᴇ ' : ( ! , . / ) 
 
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ : - @iMoviesRobot"""
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ : - @cinemica"""
 
 
 
