@@ -53,7 +53,7 @@
 
 ## Deploy to Heroku 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zedTeam21/imoviesrobot_3.0)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Techwrdd/cinemica_4.0)
 
 ## Commands
 ```
