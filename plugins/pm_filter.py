@@ -228,7 +228,7 @@ async def pm_next_page(bot, query):
         )
     else:
         btn.insert(0, [
-            InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/+yVQla9ALufU1ZWJl")
+            InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/cinemica/100")
         ]) 
         btn.insert(0, 
             [
@@ -325,7 +325,7 @@ async def next_page(bot, query):
         )
     else:
         btn.insert(0, [
-            InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/+yVQla9ALufU1ZWJl")
+            InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/cinemica/100")
         ]) 
         btn.insert(0, 
             [
@@ -367,7 +367,7 @@ async def advantage_spoll_choker(bot, query):
                text = (M_NT_FND),
                reply_markup=InlineKeyboardMarkup(
                                       [[
-                                        InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/RequestiMoviesBot"),
+                                        InlineKeyboardButton('💢 Request to admin 💢', url="https://t.me/cinemica_bot"),
 
                                       ]]
                ),
@@ -402,7 +402,7 @@ async def pm_spoll_tester(bot, query):
 async def languages_cb_handler(client: Client, query: CallbackQuery):
     if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
         return await query.answer(
-            f"⚠️ 𝗛𝗲𝘆, {query.from_user.first_name}.. \n\n𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿 𝗢𝘄𝗻𝗲𝗿 𝗙𝗶𝗹𝗲,\n\n⚠️𝗗𝗼𝗻'𝘁 𝗖𝗹𝗶𝗰𝗸 𝗢𝘁𝗵𝗲𝗿𝘀 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 😬",
+            f"⚠️ 𝗛𝗲𝘆, {query.from_user.first_name}.. \n\n𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿 𝗢𝘄𝗻 𝗙𝗶𝗹𝗲,\n\n⚠️𝗗𝗼𝗻'𝘁 𝗖𝗹𝗶𝗰𝗸 𝗢𝘁𝗵𝗲𝗿𝘀 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 😬",
             show_alert=True,
         )
 
@@ -445,7 +445,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
 
     if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
         return await query.answer(
-            f"⚠️ 𝗛𝗲𝘆, {query.from_user.first_name}.. \n\n𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿 𝗢𝘄𝗻𝗲𝗿 𝗙𝗶𝗹𝗲,\n\n⚠️𝗗𝗼𝗻'𝘁 𝗖𝗹𝗶𝗰𝗸 𝗢𝘁𝗵𝗲𝗿𝘀 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 😬",
+            f"⚠️ 𝗛𝗲𝘆, {query.from_user.first_name}.. \n\n𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿 𝗢𝘄𝗻 𝗙𝗶𝗹𝗲,\n\n⚠️𝗗𝗼𝗻'𝘁 𝗖𝗹𝗶𝗰𝗸 𝗢𝘁𝗵𝗲𝗿𝘀 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 😬",
             show_alert=True,
         )
 
@@ -486,7 +486,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         )
     else:
         btn.insert(0, [
-             InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/cinemica/71")
+             InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/cinemica/100")
         ]) 
         btn.insert(0, 
             [
@@ -725,12 +725,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         [
                             [
                                 InlineKeyboardButton(
-	                                "𝙎𝙀𝙀 𝙈𝙊𝙍𝙀 𝙇𝙄𝙆𝙀 𝙏𝙃𝙀𝙎𝙀 🎬", url="https://t.me/iRecommendations"
-		                        )
-	                        ],
-	                        [
-                                InlineKeyboardButton(
-	                                "𝙒𝘼𝙏𝘾𝙃 𝘼𝙉𝙄𝙈𝙀 💮", url="https://t.me/iAnimeHub"
+	                                "𝙎𝙀𝙀 𝙈𝙊𝙍𝙀 𝙇𝙄𝙆𝙀 𝙏𝙃𝙀𝙎𝙀 🎬", url="https://t.me/cinemica"
 		                        )
 	                        ],
 	                        [			
@@ -1128,12 +1123,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('CHANNEL', url=CHNL_LNK),
                     InlineKeyboardButton('GROUP', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('REQUEST', url='https://t.me/RequestiMoviesBot'),
+                    InlineKeyboardButton('REQUEST', url='https://t.me/cinemica_bot'),
                     InlineKeyboardButton('SEARCH INLINE', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('⚠️ JOIN OUR BACKUP CHANNEL ⚠️', url='https://t.me/IMoviesRobot_backup'),
+                    InlineKeyboardButton('⚠️ JOIN OUR BACKUP CHANNEL ⚠️', url='https://t.me/cinemica_backup'),
                 ],[
-                    InlineKeyboardButton('HOW TO USE THIS BOT ⚙️', url='https://t.me/iMoviesRobot_channel/11')
+                    InlineKeyboardButton('HOW TO USE THIS BOT ⚙️', url='https://t.me/cinemica/100')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1677,7 +1672,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.insert(0, [
-            InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/+yVQla9ALufU1ZWJl")
+            InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/cinemica/100")
         ]) 
         btn.insert(0, 
             [
@@ -1807,7 +1802,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
         btn.insert(0, [
-            InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/+yVQla9ALufU1ZWJl")
+            InlineKeyboardButton("⚡How to Download⚡", url="https://t.me/cinemica/100")
         ]) 
         btn.insert(0, 
             [
