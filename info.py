@@ -202,8 +202,8 @@ SHORT_API2 = environ.get("SHORT_API2", "1f5f1a40bec1bb6278f0fdbe8dd67bdb12690746
 LANGUAGES = ["tamil", "english", "hindi", "telugu", "malayalam", "kannada"]
 
 
-KOYEB_API_KEY = os.environ.get("34gb8i2lmgslvkk6gqkudw84a3qv5016lrmynscfag3xnxncgky9fiofl518lvje", None)
-KOYEB_APP_NAME = os.environ.get("cinemica", None)
+KOYEB_API_KEY = os.environ.get("KOYEB_API_KEY, "34gb8i2lmgslvkk6gqkudw84a3qv5016lrmynscfag3xnxncgky9fiofl518lvje")
+KOYEB_APP_NAME = os.environ.get("KOYEB_APP_NAME", cinemicabot)
 KOYEB = bool(KOYEB_API_KEY and KOYEB_APP_NAME)
 
 
