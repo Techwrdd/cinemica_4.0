@@ -19,7 +19,7 @@ from database.users_chats_db import db
 from bs4 import BeautifulSoup
 import requests
 from datetime import datetime, timedelta, timezone
-
+import requests
 
 
 logger = logging.getLogger(__name__)
@@ -487,3 +487,59 @@ async def shortlink(link):
         else:
             return await shortz.convert(link, silently_fail=False)
     return link
+
+
+async def get_app_id(api_token, app_name):
+    # Endpoint for the Koyeb API
+    endpoint = "https://app.koyeb.com/v1/services"
+
+    # Create headers for the request
+    headers = {
+        "Authorization": f"Bearer {api_token}",
+        "Content-Type": "application/json"
+    }
+
+    # Set up the query parameters
+    params = {
+        "name": f"{app_name}"
+    }
+    # Send a GET request to the API to retrieve the app ID
+    response = requests.get(endpoint, headers=headers, params=params)
+
+    # Check the status code of the response
+    if response.status_code == 200:
+        # Parse the response as JSON
+        data = response.json()
+
+        if len(data) > 0:
+            app_id = data["services"][0]["id"]
+            return app_id
+        else:
+            return None
+    else:
+        return None
+
+
+async def redeploy_app(api_token, app_name):
+    # Endpoint for the Koyeb API
+    app_id = await get_app_id(api_token, app_name)
+    if app_id is None:
+        return None
+
+    endpoint = f"https://app.koyeb.com/v1/services/{app_id}/redeploy"
+
+    # Create headers for the request
+    headers = {
+        "Authorization": f"Bearer {api_token}",
+        "Content-Type": "application/json"
+    }
+
+    # Send a POST request to the API to redeploy the app
+    response = requests.post(endpoint, headers=headers)
+
+    # Check the status code of the response
+    if response.status_code == 200:
+        return True
+    else:
+        return False
+
