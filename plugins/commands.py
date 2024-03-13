@@ -12,7 +12,7 @@ from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message 
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
 from database.users_chats_db import db
-from info import VERIFY_CLOSE, VERIFY_LOG, GRP_LNK, CHNL_LNK, VERIFY, CHANNELS, MALIK5, MALIK, TUTORIAL_LINK_1, TUTORIAL_LINK_2, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, START_MESSAGE, FORCE_SUB_TEXT, SUPPORT_CHAT
+from info import KOYEB, KOYEB_API_KEY, KOYEB_APP_NAME, VERIFY_CLOSE, VERIFY_LOG, GRP_LNK, CHNL_LNK, VERIFY, CHANNELS, MALIK5, MALIK, TUTORIAL_LINK_1, TUTORIAL_LINK_2, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, START_MESSAGE, FORCE_SUB_TEXT, SUPPORT_CHAT
 from utils import direct_gen_handler, get_shortlink, get_settings, get_size, is_subscribed, save_group_settings, temp
 from database.connections_mdb import active_connection
 import re
@@ -766,6 +766,19 @@ async def deletemultiplefiles(bot, message):
         parse_mode=enums.ParseMode.HTML
     )
 
+
+@Client.on_message(filters.command("restart_koyeb") & filters.private & filters.user(ADMINS))
+async def restart_koyeb(client: Client, message):
+
+    if not KOYEB:
+        return await message.reply("Koyeb is not enabled")
+
+    status = await redeploy_app(KOYEB_API_KEY, KOYEB_APP_NAME)
+
+    if status is None:
+        return await message.reply("Failed to restart")
+    else:
+        return await message.reply("Restarted successfully")
 
 
 
